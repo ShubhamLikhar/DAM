@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>Withdraw</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+		<link href="css/portal.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+        <link href="img/logo-icon.png" rel="icon" type="image/x-icon" />
+	</head> 
+
+	<body class="app">
+		<header class="app-header sticky-top">
+			<div class="app-header-inner">
+				<div class="container-fluid py-2">
+					<div class="app-header-content">
+						<div class="row justify-content-between align-items-center">
+							<div class="col-3 col-sm-1 d-xl-none">
+								<a id="sidepanel-toggler" class="sidepanel-toggler d-inline-block d-xl-none text-white" href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 30 30" role="img"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+								</a>
+							</div>
+
+							<div class="app-search-box col d-none d-xl-block">
+								<span class="fs-4 fw-semibold text-white text-decoration-none">Withdraw</span>
+								<p class="text-white text-nowrap mb-0 one-line-text">Welcome to DJAY Team (DJAY) Dambank!</p>
+							</div>
+
+							<div class="app-utilities col-xl-auto col-9 col-sm-11">
+								<div class="app-utility-item* my-2 mt-lg-0 d-sm-flex justify-content-end">
+									<div class="wallet-add gradient-bg text-white">
+										<span class="one-line-text small">Wallet address: TQrDu7WCbTQrDu7WCbTQrDu7WCb</span>
+										<i class="fa-solid fa-copy add-copy" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Copied"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="app-sidepanel" class="app-sidepanel sidepanel-visible"> 
+				<div id="sidepanel-drop" class="sidepanel-drop"></div>
+				<div class="sidepanel-inner d-flex flex-column">
+					<a href="#" id="sidepanel-close" class="sidepanel-close d-xl-none text-decoration-none">×</a>
+					<div class="app-branding">
+						<a href="index.html" class="simple-text" title="Logo">
+							<img src="img/logo.png" alt="Logo" width="180" height="74" />
+						</a>
+					</div>
+
+					<nav id="app-nav-main" class="app-nav app-nav-main flex-grow-1">
+						<ul class="app-menu list-unstyled accordion pt-3 accordion accordion-flush sidemenu-accordion" id="accordionFlushExample">
+							<li class="nav-item">
+								<a class="nav-link active" href="dashboard.html">
+									<span class="nav-icon">
+										<i class="fa-solid fa-clapperboard"></i>
+									</span>
+									<span class="nav-link-text">Dashboard</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="profile.html">
+									<span class="nav-icon">
+										<i class="fa-solid fa-user"></i>
+									</span>
+									<span class="nav-link-text">Profile</span>
+								</a>
+							</li>
+							<li class="nav-item accordion-item">
+								<a class="nav-link" href="portfolio.html">
+									<span class="nav-icon">
+										<i class="fa-solid fa-briefcase"></i>
+									</span>
+									<span class="nav-link-text">Portfolio</span>
+								</a>
+							</li>
+							<li class="nav-item accordion-item">
+								<a class="nav-link" href="profile.html">
+									<span class="nav-icon">
+										<i class="fa-solid fa-award"></i>
+									</span>
+									<span class="nav-link-text">Rewards</span>
+								</a>
+							</li>
+							<li class="nav-item accordion-item">
+								<button class="accordion-button collapsed nav-link" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsetwo" aria-expanded="false" aria-controls="flush-collapsetwo">
+									<span class="nav-icon">
+										<i class="fa-solid fa-people-group"></i>
+									</span>
+									<span class="nav-link-text">My Team</span>
+								</button>
+
+								<div id="flush-collapsetwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+									<ul class="list-unstyled">
+										<li>
+											<a class="nav-link" href="my-team.html">Team</a>
+										</li>
+										<li>
+											<a class="nav-link" href="#">My Genology</a>
+										</li>
+										<li>
+											<a class="nav-link" href="direct-active-team.html">Direct Active Members</a>
+										</li>
+										<li>
+											<a class="nav-link" href="direct-inactive-team.html">Direct Inactive Members</a>
+										</li>
+										<li>
+											<a class="nav-link" href="#">My Business</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-item accordion-item">
+								<button class="accordion-button collapsed nav-link" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsethree" aria-expanded="false" aria-controls="flush-collapsethree">
+									<span class="nav-icon">
+										<img src="img/private-sale.png" class="mb-2" alt="Private sale" title="Private sale" width="26" height="27" />
+									</span>
+									<span class="nav-link-text">Private Sale</span>
+								</button>
+
+								<div id="flush-collapsethree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+									<ul class="list-unstyled">
+										<li>
+											<a class="nav-link" href="#">My Staking</a>
+										</li>
+										<li>
+											<a class="nav-link" href="#">Buy Staking</a>
+										</li>
+                                        <li class="nav-item accordion-item ps-0">
+                                            <button class="accordion-button collapsed nav-link" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefourchild" aria-expanded="false" aria-controls="flush-collapsefourchild">
+                                                <span class="nav-icon">
+                                                    <i class="fa-solid fa-credit-card"></i>
+                                                </span>
+												<span class="nav-link-text">Incentives</span>
+                                            </button>
+                                            <div id="flush-collapsefourchild" class="accordion-collapse collapse" data-bs-parent="#accordionFlushthreechild">
+                                                <ul class="app-menu list-unstyled accordion pt-3 accordion accordion-flush sidemenu-accordion" id="accordionFlushthreechild">
+                                                    <li>
+                                                        <a class="nav-link" href="incentives">Direct sales</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="nav-link" href="incentives">Staking pool</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="nav-link" href="incentives">Referal Staking Pool</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+										<li>
+											<a class="nav-link" href="#">Units</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="wallet.html">
+									<span class="nav-icon">
+										<i class="fa-solid fa-wallet"></i>
+									</span>
+									<span class="nav-link-text">Wallet</span>
+								</a>
+							</li>
+							<li class="nav-item accordion-item">
+								<a class="nav-link" href="payout.html">
+									<span class="nav-icon">
+										<i class="fa-solid fa-money-check-dollar"></i>
+									</span>
+									<span class="nav-link-text">Payout</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="notification.html">
+									<span class="nav-icon">
+										<i class="fa-solid fa-bell"></i>
+									</span>
+									<span class="nav-link-text">Notification</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="promotion.html">
+									<span class="nav-icon">
+										<i class="fa-solid fa-download"></i>
+									</span>
+									<span class="nav-link-text">Downloads</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="setting.html">
+									<span class="nav-icon">
+										<i class="fa-solid fa-gear"></i>
+									</span>
+									<span class="nav-link-text">Settings</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<button type="button" class="nav-link text-start w-100">
+									<span class="nav-icon">
+										<i class="fa-solid fa-power-off"></i>
+									</span>
+									<span class="nav-link-text">Logout</span>
+								</button>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<div class="app-wrapper">
+			<div class="app-content pt-3 p-md-3 p-lg-4">
+				<div class="container-xl">
+					<span class="fs-4 fw-semibold text-yellow text-decoration-none d-block d-xl-none">Withdraw</span>
+					<p class="text-white text-nowrap one-line-text d-xl-none">Welcome to DJAY Team (DJAY) Dambank!</p>
+					<div class="row justify-content-center">
+						<div class="col-xl-5 col-lg-7 col-md-8 col-sm-9 py-3">
+							<!-- <h4 class="h2 fw-bold text-white"><span class="text-yellow">Withdrawal</span> Request</h4> -->
+
+							<div class="pink-bdr rounded-4 p-4">
+								<div class="d-flex flex-column align-items-center">
+									<label class="frm-lbl">AVAILABLE WITHDRAWAL BALANCE</label>
+									<span class="fw-bold display-5 gradient-text mb-5">$89.00</span>
+
+									<!-- <span class="fw-bold fs-4 text-white">$379.78</span>
+									<label class="frm-lbl mb-5">AVAILABLE BALANCE</label> -->
+								</div>
+
+								<form action="" class="withdraw-frm">
+									<label class="text-white mb-3"><i class="fa-solid fa-wallet me-2"></i>Withdraw funds to</label>
+									<div class="px-3 py-2 mb-4 border rounded-3">
+										<label for="wallet_add" class="frm-lbl mb-1">Wallet address</label>
+										<input type="text" class="frm-int" id="wallet_add" placeholder="Wallet address" />
+									</div>
+
+									<div class="px-3 py-2 mb-4 border rounded-3">
+										<label for="enter_withdrawal-usdt" class="frm-lbl mb-1">Enter withdrawal USDT</label>
+										<div class="d-flex align-items-center">
+											<img src="img/tether.png" class="me-2" alt="Tether coin" width="20" height="20" />
+											<input type="number" class="frm-int" id="enter_withdrawal-usdt" placeholder="Enter withdrawal USDT" value="00" />
+										</div>
+									</div>
+
+									<div class="px-3 py-2 mb-4 border rounded-3">
+										<label for="transaction_fees" class="frm-lbl mb-1">Transaction fees</label>
+										<div class="d-flex align-items-center">
+											<img src="img/tether.png" class="me-2" alt="Tether coin" width="20" height="20" />
+											<input type="number" class="frm-int" id="transaction_fees" placeholder="Transaction fees" value="00" disabled />
+										</div>
+									</div>
+
+									<div class="px-3 py-2 mb-4 border rounded-3">
+										<label for="net_withdraw_usdt" class="frm-lbl mb-1">Net withdraw USDT</label>
+										<div class="d-flex align-items-center">
+											<img src="img/tether.png" class="me-2" alt="Tether coin" width="20" height="20" />
+											<input type="number" class="frm-int" id="net_withdraw_usdt" placeholder="Net withdraw USDT" value="00" />
+										</div>
+									</div>
+
+									<div class="px-3 py-2 mb-4 border rounded-3">
+										<label for="transaction_password" class="frm-lbl mb-1">Transaction password</label>
+										<input type="password" class="frm-int" id="transaction_password" placeholder="Transaction password" />
+									</div>
+
+									<div class="px-3 py-2 mb-4 border rounded-3 d-flex justify-content-between align-items-center">
+										<div class="w-100">
+											<label for="2fa_code" class="frm-lbl mb-1">2FA code</label>
+											<input type="text" class="frm-int " id="2fa_code" placeholder="2FA code" />
+										</div>
+										<button type="button" class="frm-btn gradient-bg text-white small fw-normal text-nowrap px-2 py-1 ms-3 rounded-3" title="Send 2FA code">Send 2FA code</button>
+									</div>
+
+									<div>
+										<button type="button" class="frm-btn gradient-bg text-white p-3 w-100 rounded-4" title="Confirm Withdraw">Confirm Withdraw</button>
+									</div>
+								</form>
+
+								<!-- <form action="" class="withdraw-frm">
+									<label class="text-white mb-3"><i class="fa-solid fa-wallet me-2"></i>Withdraw funds to</label>
+									<div class="form-floating mb-4 w-100">
+										<input type="text" class="form-control floating-int" id="wallet_add" placeholder="Wallet address" />
+										<label for="wallet_add" class="floating-lbl text-white small">Wallet address</label>
+									</div>
+
+									<div class="form-floating mb-4 w-100">
+										<input type="text" class="form-control floating-int" id="username" placeholder="Username" />
+										<label for="username" class="floating-lbl text-white small">Username</label>
+									</div>
+
+									<div class="form-floating mb-4 w-100">
+										<input type="password" class="form-control floating-int" id="password" placeholder="Password" />
+										<label for="password" class="floating-lbl text-white small">Password</label>
+									</div>
+
+									<div class="form-floating mb-4 w-100">
+										<input type="password" class="form-control floating-int" id="confirm_password" placeholder="Confirm password" />
+										<label for="confirm_password" class="floating-lbl text-white small">Confirm password</label>
+									</div>
+
+									<div>
+										<button type="button" class="frm-btn gradient-bg text-white p-2 w-100 rounded-3" title="Withdraw">Withdraw</button>
+									</div>
+								</form> -->
+							</div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/app.js"></script> 
+	</body>
+</html>

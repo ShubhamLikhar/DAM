@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sign up</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+        <link href="img/logo-icon.png" rel="icon" type="image/x-icon" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#" title="Logo"><img src="img/logo.png" alt="Logo" width="180" height="74" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header border-bottom border-secondary">
+                        <a href="#" title="Logo"><img src="img/logo.png" alt="Logo" width="110" height="45" /></a>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 other-page">
+                            <li class="nav-item nav-itm">
+                                <a class="nav-link active" aria-current="page" href="index.html" title="Home">Home</a>
+                            </li>
+                            <li class="nav-item nav-itm">
+                                <a class="nav-link" href="dashboard.html" title="Dashboard">Dashboard</a>
+                            </li>
+                            <li class="nav-item nav-itm">
+                                <a class="nav-link" href="#" title="About us">About us</a>
+                            </li>
+                            <li class="nav-item nav-itm">
+                                <a class="nav-link" href="#" title="Blog">Blog</a>
+                            </li>
+                            <li class="nav-item nav-itm">
+                                <a class="nav-link" href="#" title="Contact">Contact</a>
+                            </li>
+                            <li class="nav-item dropdown ms-lg-5">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-user user-icon gradient-bg"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end bg-transparent border border-secondary overflow-hidden">
+                                    <li><a class="dropdown-item drop-itm" href="login.html"><i class="fa-solid fa-right-to-bracket me-2"></i>Login</a></li>
+                                    <li><a class="dropdown-item drop-itm" href="signup.html"><i class="fa-solid fa-right-to-bracket me-2"></i>Register</a></li>
+                                    <li><a class="dropdown-item drop-itm" href="#"><i class="fa-solid fa-right-from-bracket me-2"></i>Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="bg-overlay text-white">
+            <div class="create-acnt pt-5">
+                <div class="container py-3">
+                    <div class="row">
+                        <div class="col-12 py-3">
+                            <span>START FOR FREE</span>
+                            <h1 class="mb-4">Create New Account<span class="text-yellow">.</span></h1>
+                            <p>Already a Member? <a href="login.html" class="text-decoration-none text-yellow" title="Login">Login</a></p>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-md-6 py-3">
+                                    <div class="int-col">
+                                        <label class="frm-lbl">First name</label>
+                                        <input type="text" class="frm-int" placeholder="First name" />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 py-3">
+                                    <div class="int-col">
+                                        <label class="frm-lbl">Last name</label>
+                                        <input type="text" class="frm-int" placeholder="Last name" />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 py-3">
+                                    <div class="int-col">
+                                        <label class="frm-lbl">Email address</label>
+                                        <input type="email" class="frm-int" placeholder="Email address" />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 py-3">
+                                    <div class="int-col">
+                                        <label class="frm-lbl">Username</label>
+                                        <input type="text" class="frm-int" placeholder="Username" />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 py-3">
+                                    <div class="int-col">
+                                        <label class="frm-lbl">Phone number</label>
+                                        <input type="number" class="frm-int" placeholder="Phone number" />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 py-3">
+                                    <div class="int-col">
+                                        <label for="floatingInput" class="frm-lbl">Country</label>
+                                        <select class="form-select frm-int">
+                                            <option>India</option>
+                                            <option>USA</option>
+                                            <option>China</option>
+                                            <option>Thailand</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 py-3">
+                                    <div class="int-col position-relative">
+                                        <label class="frm-lbl">Password</label>
+                                        <input type="password" class="frm-int pe-5" placeholder="Password" />
+                                        <i class="fa-solid fa-eye psd-hide"></i>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 py-3">
+                                    <div class="int-col">
+                                        <label class="frm-lbl">Confirm password</label>
+                                        <input type="password" class="frm-int" placeholder="Confirm password" />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 py-3">
+                                    <div class="">
+                                        <a href="forgot-password-screen1.html" class="frm-btn text-white d-block w-100 bg-black-howl" title="Reset information">Reset information</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 py-3">
+                                    <div>
+                                        <button type="button" class="frm-btn text-white d-block w-100 gradient-bg" title="Create Account Now!">Create Account Now!</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-lg-6 py-3">
+                                    <div class="form-floating int-col">
+                                        <input type="email" class="form-control frm-int" id="floatingInput" placeholder="First name" />
+                                        <label for="floatingInput" class="frm-lbl">First name</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 py-3">
+                                    <div class="form-floating int-col">
+                                        <input type="email" class="form-control frm-int" id="floatingInput" placeholder="Last name" />
+                                        <label for="floatingInput" class="frm-lbl">Last name</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 py-3">
+                                    <div class="form-floating int-col">
+                                        <input type="email" class="form-control frm-int" id="floatingInput" placeholder="Email address" />
+                                        <label for="floatingInput" class="frm-lbl">Email address</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 py-3">
+                                    <div class="form-floating int-col">
+                                        <input type="email" class="form-control frm-int" id="floatingInput" placeholder="Username" />
+                                        <label for="floatingInput" class="frm-lbl">Username</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 py-3">
+                                    <div class="form-floating int-col">
+                                        <input type="email" class="form-control frm-int" id="floatingInput" placeholder="Phone number" />
+                                        <label for="floatingInput" class="frm-lbl">Phone number</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 py-3">
+                                    <div class="form-floating int-col">
+                                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        <label for="floatingInput" class="frm-lbl">Country</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 py-3">
+                                    <div class="form-floating int-col">
+                                        <input type="email" class="form-control frm-int" id="floatingInput" placeholder="Password" />
+                                        <label for="floatingInput" class="frm-lbl">Password</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 py-3">
+                                    <div class="form-floating int-col">
+                                        <input type="email" class="form-control frm-int" id="floatingInput" placeholder="Confirm password" />
+                                        <label for="floatingInput" class="frm-lbl">Confirm password</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center text-white pt-3">
+            <div class="container py-3">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 col-lg-10 py-3">
+                        <a href="#" title="Logo"><img src="img/logo.png" class="mb-4" alt="Logo" width="180" height="74" /></a>
+                        <p class="fw-bold fs-5">Don't miss out, Stay updated</p>
+                        <div class="int-prnt">
+                            <input type="text" class="" placeholder="Enter your email" />
+                            <button type="button" class="frm-btn gradient-bg text-white py-2">SUBSCRIBE</button>
+                        </div>
+                        <p>Don’t hesitate to subscribe to latest news about ICo markets as well as crucial financial knowledge to become successful investors globally</p>
+                        <ul class="list-unstyled d-flex justify-content-center align-items-center flex-wrap social-icon">
+                            <li><a href="#" class="x-twitter-bg" title="X.com"><i class="fa-brands fa-x-twitter"></i></a></li>
+                            <li><a href="#" class="fb-bg" title="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#" class="tele-bg" title="Telegram"><i class="fa-solid fa-paper-plane"></i></a></li>
+                            <li><a href="#" class="youtube-bg" title="Youtube"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href="#" class="tiktok-bg" title="Tiktok"><i class="fa-brands fa-tiktok"></i></a></li>
+                            <li><a href="#" class="discord-bg" title="Discord"><i class="fa-brands fa-discord"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-top border-dark py-2">
+                <p class="fw-light small mb-0">© 2022. All rights reserved by DAM</p>
+            </div>
+        </footer>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

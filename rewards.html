@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>Rewards</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+		<link href="css/portal.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+        <link href="img/logo-icon.png" rel="icon" type="image/x-icon" />
+	</head> 
+
+	<body class="app">
+		<header class="app-header sticky-top">
+			<div class="app-header-inner">
+				<div class="container-fluid py-2">
+					<div class="app-header-content">
+						<div class="row justify-content-between align-items-center">
+							<div class="col-3 col-sm-1 d-xl-none">
+								<a id="sidepanel-toggler" class="sidepanel-toggler d-inline-block d-xl-none text-white" href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 30 30" role="img"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+								</a>
+							</div>
+
+							<div class="col-8 col-sm-4 order-1 d-xl-none">
+								<div class="d-flex justify-content-end align-items-center">
+									<div class="d-flex align-items-center me-3">
+										<img src="img/tether.png" class="mx-2" alt="Tether coin" width="30" height="30" />
+										<span class="text-yellow font-weight-bold">$2343</span>
+									</div>
+
+									<div class="d-flex align-items-center me-2">
+										<img src="img/logo-icon.png" class="brightness15 me-2" alt="DAM" title="DAM" width="16" height="20" />
+										<span class="text-yellow font-weight-bold">$2343</span>
+									</div>
+
+									<img src="img/user.png" class="bg-white m-2 border rounded-circle object-fit-cover d-xl-none" alt="User" title="User" width="40" height="40" />
+								</div>
+							</div>
+
+							<div class="app-search-box col d-none d-xl-block">
+								<span class="fs-4 fw-semibold text-white text-decoration-none">Rewards</span>
+								<p class="text-white text-nowrap mb-0 one-line-text">Welcome to XXX Dambank !</p>
+							</div>
+
+							<div class="app-utilities col-auto">
+								<div class="app-utility-item* my-2 mt-lg-0 d-sm-flex justify-content-md-end">
+									<div class="wallet-add gradient-bg text-white">
+										<span class="one-line-text small">Wallet address: TQrDu7WCbTQrDu7WCbTQrDu7WCb</span>
+										<i class="fa-solid fa-copy add-copy" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Copied"></i>
+									</div>
+								</div>
+								<div class="d-none d-xl-flex flex-wrap">
+									<div class="app-utility-item mt-2 mt-lg-0 text-white d-flex align-items-center">
+										<i class="fa-solid fa-hand-holding-dollar me-2"></i>
+										<span>Deposit Balance</span>
+										<img src="img/tether.png" class="mx-2" alt="Tether coin" width="30" height="30" />
+										<span class="text-yellow font-weight-bold">$2343</span>
+									</div>
+									<div class="app-utility-item mt-2 mt-lg-0 text-white d-flex align-items-center">
+										<img src="img/logo-icon.png" class="brightness15 me-2" alt="DAM" title="DAM" width="16" height="20" />
+										<span>DAM Balance</span>
+										<img src="img/tether.png" class="mx-2" alt="Tether coin" width="30" height="30" />
+										<span class="text-yellow font-weight-bold">$2343</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="app-sidepanel" class="app-sidepanel sidepanel-visible"> 
+				<div id="sidepanel-drop" class="sidepanel-drop"></div>
+				<div class="sidepanel-inner d-flex flex-column">
+					<a href="#" id="sidepanel-close" class="sidepanel-close d-xl-none text-decoration-none">×</a>
+					<div class="app-branding">
+						<a href="index.html" class="simple-text" title="Logo">
+							<img src="img/logo.png" alt="Logo" width="180" height="74" />
+						</a>
+					</div>
+
+					<nav id="app-nav-main" class="app-nav app-nav-main flex-grow-1">
+						<ul class="app-menu list-unstyled accordion pt-3 accordion accordion-flush sidemenu-accordion" id="accordionFlushExample">
+							<li class="nav-item">
+								<a class="nav-link active" href="dashboard.html">
+									<span class="nav-icon">
+										<i class="fa-solid fa-clapperboard"></i>
+									</span>
+									<span class="nav-link-text">Rewards</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="profile.html">
+									<span class="nav-icon">
+										<i class="fa-solid fa-user"></i>
+									</span>
+									<span class="nav-link-text">Profile</span>
+								</a>
+							</li>
+							<li class="nav-item accordion-item">
+								<a class="nav-link" href="portfolio.html">
+									<span class="nav-icon">
+										<i class="fa-solid fa-briefcase"></i>
+									</span>
+									<span class="nav-link-text">Portfolio</span>
+								</a>
+							</li>
+							<li class="nav-item accordion-item">
+								<a class="nav-link" href="profile.html">
+									<span class="nav-icon">
+										<i class="fa-solid fa-award"></i>
+									</span>
+									<span class="nav-link-text">Rewards</span>
+								</a>
+							</li>
+							<li class="nav-item accordion-item">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsetwo" aria-expanded="false" aria-controls="flush-collapsetwo">
+									<span class="nav-icon">
+										<i class="fa-solid fa-people-group"></i>My Team
+									</span>
+								</button>
+
+								<div id="flush-collapsetwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+									<ul class="list-unstyled">
+										<li>
+											<a class="nav-link" href="my-team.html">Team</a>
+										</li>
+										<li>
+											<a class="nav-link" href="#">My Genology</a>
+										</li>
+										<li>
+											<a class="nav-link" href="direct-active-team.html">Direct Active Members</a>
+										</li>
+										<li>
+											<a class="nav-link" href="direct-inactive-team.html">Direct Inactive Members</a>
+										</li>
+										<li>
+											<a class="nav-link" href="#">My Business</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-item accordion-item">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsethree" aria-expanded="false" aria-controls="flush-collapsethree">
+									<span class="nav-icon">
+										<i class="fa-solid fa-wallet"></i>Private Sale
+									</span>
+								</button>
+
+								<div id="flush-collapsethree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+									<ul class="list-unstyled">
+										<li>
+											<a class="nav-link" href="#">My Staking</a>
+										</li>
+										<li>
+											<a class="nav-link" href="#">Buy Staking</a>
+										</li>
+                                        <li class="nav-item accordion-item ps-0">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefourchild" aria-expanded="false" aria-controls="flush-collapsefourchild">
+                                                <span class="nav-icon">
+                                                    <i class="fa-solid fa-credit-card"></i>Incentives
+                                                </span>
+                                            </button>
+                                            <div id="flush-collapsefourchild" class="accordion-collapse collapse" data-bs-parent="#accordionFlushthreechild">
+                                                <ul class="app-menu list-unstyled accordion pt-3 ps-3 ms-3 accordion accordion-flush sidemenu-accordion" id="accordionFlushthreechild">
+                                                    <li>
+                                                        <a class="nav-link" href="incentives">Direct sales</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="nav-link" href="incentives">Staking pool</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="nav-link" href="incentives">Referal Staking Pool</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+										<li>
+											<a class="nav-link" href="#">Units</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="wallet.html">
+									<span class="nav-icon">
+										<i class="fa-solid fa-wallet"></i>
+									</span>
+									<span class="nav-link-text">Wallet</span>
+								</a>
+							</li>
+							<li class="nav-item accordion-item">
+								<a class="nav-link" href="payout.html">
+									<span class="nav-icon">
+										<i class="fa-solid fa-money-check-dollar"></i>
+									</span>
+									<span class="nav-link-text">Payout</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="notification.html">
+									<span class="nav-icon">
+										<i class="fa-solid fa-bell"></i>
+									</span>
+									<span class="nav-link-text">Notification</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="promotion.html">
+									<span class="nav-icon">
+										<i class="fa-solid fa-download"></i>
+									</span>
+									<span class="nav-link-text">Downloads</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="setting.html">
+									<span class="nav-icon">
+										<i class="fa-solid fa-gear"></i>
+									</span>
+									<span class="nav-link-text">Settings</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="app-sidepanel-footer">
+						<nav class="app-nav app-nav-footer">
+							<ul class="app-menu footer-menu list-unstyled">
+								<li class="nav-item">
+									<button type="button" class="nav-link text-start w-100">
+										<span class="nav-icon">
+											<i class="fa-solid fa-power-off"></i>
+										</span>
+										<span class="nav-link-text">Logout</span>
+									</button>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="app-wrapper">
+			<div class="app-content pt-3 p-md-3 p-lg-4">
+				<div class="container-xl">
+					<span class="fs-4 fw-semibold text-white text-decoration-none d-block mb-3 d-xl-none">Rewards</span>
+					<div class="row justify-content-center">
+						<div class="col-12 py-3">
+                            <div class="row">
+                                <div class="col-12 py-3">
+                                    <p class="fs-2 fw-bold text-white text-center"><span class="gradient-text">Monthly profit Reward</span></p>
+                                    <table class="table table-responsive table-bordered table-hover evn-odd-tbl d-block d-lg-table border border-secondary">
+                                        <thead>
+                                            <tr class="text-center">
+                                                <th>ID</th>
+                                                <th>CONTRIBUTOR</th>
+                                                <th>MONTHLY IN USDT</th>
+                                                <th>MONTHLY IN DAM</th>
+                                                <th>DAILY IN USDT</th>
+                                                <th>DAILY IN DAM</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-end">DAM01</td>
+                                                <td class="text-end">100 $</td>
+                                                <td class="text-center">4.80$</td>
+                                                <td class="text-center">4.80$</td>
+                                                <td class="text-center">0.16$</td>
+                                                <td class="text-center">0.16$</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="col-12 py-3">
+                                    <p class="fs-2 fw-bold text-white text-center"> <span class="gradient-text">Booster Reward</span> </p>
+                                    <table class="table table-responsive table-bordered table-hover evn-odd-tbl d-block d-lg-table border border-secondary">
+                                        <thead>
+                                            <tr class="text-center">
+                                                <th>ID</th>
+                                                <th>CONTRIBUTOR</th>
+                                                <th>MONTHLY IN USDT</th>
+                                                <th>MONTHLY IN DAM</th>
+                                                <th>DAILY IN USDT</th>
+                                                <th>DAILY IN DAM</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-end">1</td>
+                                                <td class="text-end">400.00</td>
+                                                <td class="text-center">50%</td>
+                                                <td class="text-center">0.32</td>
+                                                <td class="text-center">0.32</td>
+                                                <td class="text-center">0.32</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="col-12 py-3">
+                                    <p class="fs-2 fw-bold text-white text-center"> <span class="gradient-text">100% Smart Influencer Bonus (SIB)</span> </p>
+                                    <table class="table table-responsive table-bordered table-hover evn-odd-tbl d-block d-lg-table border border-secondary">
+                                        <thead>
+                                            <tr class="text-center">
+                                                <th>ID</th>
+                                                <th>CONTRIBUTOR</th>
+                                                <th>MONTHLY IN USDT</th>
+                                                <th>MONTHLY IN DAM</th>
+                                                <th>DAILY IN USDT</th>
+                                                <th>DAILY IN DAM</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-end">1</td>
+                                                <td class="text-end">400.00</td>
+                                                <td class="text-center">50%</td>
+                                                <td class="text-center">0.32</td>
+                                                <td class="text-center">0.32</td>
+                                                <td class="text-center">0.32</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="col-12 py-3">
+                                    <p class="fs-2 fw-bold text-white text-center"> <span class="gradient-text">Unilevel Reward</span> </p>
+                                    <table class="table table-responsive table-bordered table-hover evn-odd-tbl d-block d-lg-table border border-secondary">
+                                        <thead>
+                                            <tr class="text-center">
+                                                <th>ID</th>
+                                                <th>CONTRIBUTOR</th>
+                                                <th>MONTHLY IN USDT</th>
+                                                <th>MONTHLY IN DAM</th>
+                                                <th>DAILY IN USDT</th>
+                                                <th>DAILY IN DAM</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-end">1</td>
+                                                <td class="text-end">400.00</td>
+                                                <td class="text-center">50%</td>
+                                                <td class="text-center">0.32</td>
+                                                <td class="text-center">0.32</td>
+                                                <td class="text-center">0.32</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="col-12 py-3">
+                                    <p class="fs-2 fw-bold text-white text-center"> <span class="gradient-text">Direct % Multiplier</span> </p>
+                                    <table class="table table-responsive table-bordered table-hover evn-odd-tbl d-block d-lg-table border border-secondary">
+                                        <thead>
+                                            <tr class="text-center">
+                                                <th>ID</th>
+                                                <th>CONTRIBUTOR</th>
+                                                <th>MONTHLY IN USDT</th>
+                                                <th>MONTHLY IN DAM</th>
+                                                <th>DAILY IN USDT</th>
+                                                <th>DAILY IN DAM</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-end">1</td>
+                                                <td class="text-end">400.00</td>
+                                                <td class="text-center">50%</td>
+                                                <td class="text-center">0.32</td>
+                                                <td class="text-center">0.32</td>
+                                                <td class="text-center">0.32</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="col-12 py-3">
+                                    <p class="fs-2 fw-bold text-white text-center"> <span class="gradient-text">Legend Pool</span> </p>
+                                    <table class="table table-responsive table-bordered table-hover evn-odd-tbl d-block d-lg-table border border-secondary">
+                                        <thead>
+                                            <tr class="text-center">
+                                                <th>ID</th>
+                                                <th>CONTRIBUTOR</th>
+                                                <th>MONTHLY IN USDT</th>
+                                                <th>MONTHLY IN DAM</th>
+                                                <th>DAILY IN USDT</th>
+                                                <th>DAILY IN DAM</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-end">1</td>
+                                                <td class="text-end">400.00</td>
+                                                <td class="text-center">50%</td>
+                                                <td class="text-center">0.32</td>
+                                                <td class="text-center">0.32</td>
+                                                <td class="text-center">0.32</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="col-12 py-3">
+                                    <p class="fs-2 fw-bold text-white text-center"> <span class="gradient-text">Cash Reward</span> </p>
+                                    <table class="table table-responsive table-bordered table-hover evn-odd-tbl d-block d-lg-table border border-secondary">
+                                        <thead>
+                                            <tr class="text-center">
+                                                <th>ID</th>
+                                                <th>CONTRIBUTOR</th>
+                                                <th>MONTHLY IN USDT</th>
+                                                <th>MONTHLY IN DAM</th>
+                                                <th>DAILY IN USDT</th>
+                                                <th>DAILY IN DAM</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-end">1</td>
+                                                <td class="text-end">400.00</td>
+                                                <td class="text-center">50%</td>
+                                                <td class="text-center">0.32</td>
+                                                <td class="text-center">0.32</td>
+                                                <td class="text-center">0.32</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+
+                                <!-- <div class="col-lg-3 col-md-3 col-12">
+                                    <div class="nav flex-column flex-md-column flex-sm-row nav-pills vertical-tab-sticky" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                        <button class="nav-link vertical-tab active" id="monthly-usdt-tab" data-bs-toggle="pill" data-bs-target="#monthly-usdt" type="button" role="tab" aria-controls="monthly-usdt" aria-selected="true">Monthly Profit Reward (USDT)</button>
+                                        <button class="nav-link vertical-tab" id="monthly-dam-tab" data-bs-toggle="pill" data-bs-target="#monthly-dam" type="button" role="tab" aria-controls="monthly-dam" aria-selected="false">Monthly Profit Reward (DAM)</button>
+                                        <button class="nav-link vertical-tab" id="level-usdt-tab" data-bs-toggle="pill" data-bs-target="#level-usdt" type="button" role="tab" aria-controls="level-usdt" aria-selected="false">Level Reward (USDT)</button>
+                                        <button class="nav-link vertical-tab" id="level-dam-tab" data-bs-toggle="pill" data-bs-target="#level-dam" type="button" role="tab" aria-controls="level-dam" aria-selected="false">Level Reward (DAM)</button>
+                                        <button class="nav-link vertical-tab" id="booster-usdt-tab" data-bs-toggle="pill" data-bs-target="#booster-usdt" type="button" role="tab" aria-controls="booster-usdt" aria-selected="false">Booster Reward (USDT)</button>
+                                        <button class="nav-link vertical-tab" id="direct-usdt-tab" data-bs-toggle="pill" data-bs-target="#direct-usdt" type="button" role="tab" aria-controls="direct-usdt" aria-selected="false">Direct %Multiplier (USDT)</button>
+                                        <button class="nav-link vertical-tab" id="rank-tab" data-bs-toggle="pill" data-bs-target="#rank" type="button" role="tab" aria-controls="rank" aria-selected="false">Rank</button>
+                                        <button class="nav-link vertical-tab" id="cash-reward-tab" data-bs-toggle="pill" data-bs-target="#cash-reward" type="button" role="tab" aria-controls="cash-reward" aria-selected="false">Cash Reward</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-9 col-md-9 col-12">
+                                    <div class="tab-content w-100" id="v-pills-tabContent">
+                                        <div class="tab-pane fade show active" id="monthly-usdt" role="tabpanel" aria-labelledby="monthly-usdt-tab" tabindex="0">
+                                            <table class="table table-responsive table-bordered table-hover evn-odd-tbl d-block d-sm-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Date</th>
+                                                        <th>Direct Business</th>
+                                                        <th>Percentage</th>
+                                                        <th>USDT</th>
+                                                        <th>Total</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="monthly-dam" role="tabpanel" aria-labelledby="monthly-dam-tab" tabindex="0">
+                                            <table class="table table-responsive table-bordered table-hover evn-odd-tbl d-block d-sm-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Date</th>
+                                                        <th>Direct Business</th>
+                                                        <th>Percentage</th>
+                                                        <th>DAM</th>
+                                                        <th>Total</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="level-usdt" role="tabpanel" aria-labelledby="level-usdt-tab" tabindex="0">
+                                            <table class="table table-responsive table-bordered table-hover evn-odd-tbl d-block d-sm-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Date</th>
+                                                        <th>Business</th>
+                                                        <th>Level</th>
+                                                        <th>Percentage</th>
+                                                        <th>USDT</th>
+                                                        <th>Total</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L1</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L2</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L3</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L4</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L5</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L6</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L7</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L8</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L9</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L10</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L11</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L12</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L13</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L14</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L15</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L16</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="level-dam" role="tabpanel" aria-labelledby="level-dam-tab" tabindex="0">
+                                            <table class="table table-responsive table-bordered table-hover evn-odd-tbl d-block d-sm-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Date</th>
+                                                        <th>Business</th>
+                                                        <th>Level</th>
+                                                        <th>Percentage</th>
+                                                        <th>DAM</th>
+                                                        <th>Total</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L1</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L2</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L3</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L4</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L5</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L6</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L7</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L8</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L9</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L10</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L11</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L12</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L13</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L14</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L15</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td>xxxxx</td>
+                                                        <td class="text-center">L16</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="booster-usdt" role="tabpanel" aria-labelledby="booster-usdt-tab" tabindex="0">
+                                            <table class="table table-responsive table-bordered table-hover evn-odd-tbl d-block d-lg-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Activation Date</th>
+                                                        <th>Date</th>
+                                                        <th>Direct Business</th>
+                                                        <th>Percentage</th>
+                                                        <th>USDT</th>
+                                                        <th>Total</th>
+                                                        <th>Validity</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">30 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">29 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">28 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">27 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">26 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">25 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">24 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">23 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">22 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">21 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">20 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">19 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">18 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">17 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">16 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">15 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">14 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">13 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">12 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">11 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">10 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">09 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">08 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">07 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">06 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">05 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">04 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">03 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">02 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">01 Days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">2%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-end">00 Days</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="direct-usdt" role="tabpanel" aria-labelledby="direct-usdt-tab" tabindex="0">
+                                            <table class="table table-responsive table-bordered table-hover evn-odd-tbl d-block">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Target</th>
+                                                        <th>Date</th>
+                                                        <th>Direct Business</th>
+                                                        <th>Percentage</th>
+                                                        <th>Cumulative Business</th>
+                                                        <th>Cumulative Percentage</th>
+                                                        <th>USDT</th>
+                                                        <th>Total USDT</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-center">1</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-center">xxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">2</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-center">xxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">3</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-center">xxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">4</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-center">xxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">5</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-center">xxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">6</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-center">xxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">7</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-center">xxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">8</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-center">xxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">9</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-center">xxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">10</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-end">5%</td>
+                                                        <td class="text-end">xxx</td>
+                                                        <td class="text-center">xxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                        <td class="text-end">xxxx</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="rank" role="tabpanel" aria-labelledby="rank-tab" tabindex="0">
+                                            <table class="table table-responsive table-bordered table-hover evn-odd-tbl d-block">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Target</th>
+                                                        <th>Date</th>
+                                                        <th>Direct Business</th>
+                                                        <th>GroupBusiness</th>
+                                                        <th>Rank Target</th>
+                                                        <th>Rank</th>
+                                                        <th>Qualified Rank</th>
+                                                        <th>Cash</th>
+                                                        <th>Reward</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-center">1</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">xxx</td>
+                                                        <td class="text-center">50000 USDT + 4 Direct</td>
+                                                        <td class="text-center">BRONZE</td>
+                                                        <td class="text-end">NA</td>
+                                                        <td class="text-end">125 USDT</td>
+                                                        <td class="text-center">Apple iPhone</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">2</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">xxx</td>
+                                                        <td class="text-center">2 Direct BRONZE + 2 Active Direct</td>
+                                                        <td class="text-center">BRONZE</td>
+                                                        <td class="text-end">NA</td>
+                                                        <td class="text-end">500 USDT</td>
+                                                        <td class="text-center">IPAD PRO</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">3</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">xxx</td>
+                                                        <td class="text-center">50000 USDT + 4 Direct</td>
+                                                        <td class="text-center">BRONZE</td>
+                                                        <td class="text-end">NA</td>
+                                                        <td class="text-end">125 USDT</td>
+                                                        <td class="text-center">Apple iPhone</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">4</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">xxx</td>
+                                                        <td class="text-center">50000 USDT + 4 Direct</td>
+                                                        <td class="text-center">BRONZE</td>
+                                                        <td class="text-end">NA</td>
+                                                        <td class="text-end">125 USDT</td>
+                                                        <td class="text-center">Apple iPhone</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">5</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">xxx</td>
+                                                        <td class="text-center">50000 USDT + 4 Direct</td>
+                                                        <td class="text-center">BRONZE</td>
+                                                        <td class="text-end">NA</td>
+                                                        <td class="text-end">125 USDT</td>
+                                                        <td class="text-center">Apple iPhone</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="cash-reward" role="tabpanel" aria-labelledby="cash-reward-tab" tabindex="0">
+                                            <table class="table table-responsive table-bordered table-hover evn-odd-tbl d-block">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Target</th>
+                                                        <th>Date</th>
+                                                        <th>Direct Business</th>
+                                                        <th>GroupBusiness</th>
+                                                        <th>Rank Target</th>
+                                                        <th>Rank</th>
+                                                        <th>Qualified Rank</th>
+                                                        <th>Cash</th>
+                                                        <th>Reward</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-center">1</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">xxx</td>
+                                                        <td class="text-center">50000 USDT + 4 Direct</td>
+                                                        <td class="text-center">BRONZE</td>
+                                                        <td class="text-end">NA</td>
+                                                        <td class="text-end">125 USDT</td>
+                                                        <td class="text-center">Apple iPhone</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">2</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">xxx</td>
+                                                        <td class="text-center">2 Direct BRONZE + 2 Active Direct</td>
+                                                        <td class="text-center">BRONZE</td>
+                                                        <td class="text-end">NA</td>
+                                                        <td class="text-end">500 USDT</td>
+                                                        <td class="text-center">IPAD PRO</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">3</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">xxx</td>
+                                                        <td class="text-center">50000 USDT + 4 Direct</td>
+                                                        <td class="text-center">BRONZE</td>
+                                                        <td class="text-end">NA</td>
+                                                        <td class="text-end">125 USDT</td>
+                                                        <td class="text-center">Apple iPhone</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">4</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">xxx</td>
+                                                        <td class="text-center">50000 USDT + 4 Direct</td>
+                                                        <td class="text-center">BRONZE</td>
+                                                        <td class="text-end">NA</td>
+                                                        <td class="text-end">125 USDT</td>
+                                                        <td class="text-center">Apple iPhone</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">5</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">01/01/2024</td>
+                                                        <td class="text-center">xxx</td>
+                                                        <td class="text-center">50000 USDT + 4 Direct</td>
+                                                        <td class="text-center">BRONZE</td>
+                                                        <td class="text-end">NA</td>
+                                                        <td class="text-end">125 USDT</td>
+                                                        <td class="text-center">Apple iPhone</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>
